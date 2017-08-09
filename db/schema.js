@@ -22,10 +22,13 @@ const GameSchema = new Schema ({
 })
 
 
-var GameModel = mongoose.model("Game", GameSchema);
-var CategoryModel = mongoose.model("Category", Categorychema);
+const GameModel = mongoose.model("Game", GameSchema);
+const CategoryModel = mongoose.model("Category", Categorychema);
+const QuestionModel = mongoose.model("Question", Questionchema);
+
 
 module.exports = {
   Game: GameModel,
-  Category: CategoryModel
+  Category: CategoryModel,
+  Question: QuestionModel
 };
